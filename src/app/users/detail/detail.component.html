@@ -1,0 +1,14 @@
+<div *ngIf="user">
+  <h2>{{user.email}} <button type="button">Delete</button> </h2>
+  <div>
+    <label>Name</label>
+    <input [(ngModel)]="user.name" placeholder="name"/>
+
+
+    <label>Surname</label>
+    <input [(ngModel)]="user.surname" placeholder="name">
+
+    <input type="button" value="Submit" />
+    <button type="reset" >Cancel</button>
+  </div>
+</div>
